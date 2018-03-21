@@ -10,8 +10,10 @@ import urllib
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from lxml import html
+from time import sleep
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+sleep(5)
 
 #scrape table function
 def scrape_mainpage(root):
